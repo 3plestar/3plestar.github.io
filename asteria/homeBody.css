@@ -1,0 +1,165 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.title {
+  display: block;
+
+  font-size: larger;
+  text-align: center;
+  grid-column: span 3;
+}
+
+/* images */
+.img {
+  height: 560px;
+  width: 400px;
+  transition: all 0.5s;
+}
+
+.imgsmall {
+  width: 400px;
+  transition: all 0.5s;
+}
+
+/* hovering over images */
+.img:hover {
+  transform: scale(1.03);
+}
+.imgsmall:hover {
+  transform: scale(1.03);
+}
+
+/* buttons */
+.buttoncontainer {
+  display: grid;
+  grid-column: span 2;
+  width: 100%;
+}
+.buttonGrid {
+  width: 100%;
+}
+
+.button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #ee0c09;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 100%;
+  border: none;
+  -webkit-clip-path: polygon(
+    calc(0% + 18px) 100%,
+    0% 50%,
+    calc(0% + 18px) 0%,
+    calc(100% - 18px) 0%,
+    100% 50%,
+    calc(100% - 18px) 100%
+  );
+  clip-path: polygon(
+    calc(0% + 18px) 100%,
+    0% 50%,
+    calc(0% + 18px) 0%,
+    calc(100% - 18px) 0%,
+    100% 50%,
+    calc(100% - 18px) 100%
+  );
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #ee0d09b7;
+}
+
+/* footer */
+.bottombar {
+  display: flex;
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  font-size: smaller;
+  border: none;
+}
+
+.bottomtext {
+  margin-top: 10px;
+  display: block;
+
+  color: white;
+  padding: 20px 30px;
+}
+
+/* body for tablet */
+@media only screen and (max-width: 1280px) {
+  .main {
+    width: 90%;
+  }
+  .title {
+    font-size: larger;
+    text-align: center;
+  }
+  /* images */
+  .img {
+    height: 100%;
+    width: 28vw;
+  }
+
+  .imgsmall {
+    width: 28vw;
+  }
+
+  /* footer */
+  .bottombar {
+    width: 100%;
+  }
+}
+
+/* body for phone */
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .title {
+    font-size: larger;
+    text-align: center;
+  }
+
+  /* images */
+  .img {
+    height: 100%;
+    width: 80vw;
+  }
+
+  .imgsmall {
+    width: 80vw;
+  }
+
+  .buttoncontainer {
+    display: block;
+    width: 80vw;
+  }
+  .buttoncontainer {
+    margin-bottom: 20px;
+  }
+  .button {
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+  .bottombar {
+    width: 100%;
+  }
+}

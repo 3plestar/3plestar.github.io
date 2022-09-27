@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/favi.png">
+    <title>Asteria Home</title>
+    <link href="barrs.css" rel="stylesheet" />
+    <link href="barssphone.css" rel="stylesheet" />
+    <link href="homeBody.css" rel="stylesheet" />
+    <link href="modal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="container">
+      <header class="topbar">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Asteria" class="logo">
+        </a>
+        <nav class="topnav">
+          <a class="toplink active" href="index.html">Home</a>
+
+          <a class="toplink" href="about.html">About</a>
+
+          <a class="toplink" href="contact.html">Contact</a>
+        </nav>
+
+        <!-- dropdown menu -->
+        <div class="topnavtwo">
+          <a href="javascript:void(0);" id="dropdownBtn">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav id="dropdown" style="display: none;">
+            <a class="ptoplink pactive" href="index.html">Home</a>
+  
+            <a class="ptoplink" href="about.html">About</a>
+  
+            <a class="ptoplink" href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <script src="dropdown.js"></script>
+        
+      </header>
+
+      <!-- main body -->
+      <div class="main">
+        <div class="title">
+          All homebrew of the Asteria group, now in one place.
+        </div>
+
+        <a href="https://docs.google.com/document/d/1pPht4zaXuygHzkU4NiQifa7SPUdcaPPWqLUZbk876zY/edit#heading=h.qkour0dyh9qr" target="modframe">
+          <img src="img/asteria.jpg" alt="oop" class="img link"/>
+        </a>
+        <a href="https://homebrewery.naturalcrit.com/share/SJq2uGxk9" target="modframe">
+          <img src="img/sakon.jpg" alt="oop" class="img link"/>
+        </a>
+        <a href="https://docs.google.com/document/d/1qHF7UxvB09ZLZ2pFhqn8iLz7dA7SG3rcCCVav26ANHQ/edit?usp=sharing" target="modframe">
+          <img src="img/oche.jpg" alt="oop" class="img link"/>
+        </a>
+        <a href="https://docs.google.com/document/d/10lptmsdpCM0FM6RRT6rztWdeytS9g0BLoX8wJa4jSVw/edit?usp=sharing" target="modframe" class="imgsmallGrid">
+          <img src="img/pokemon.jpg" alt="small image, big mistake" class="imgsmall link" />
+        </a>
+        <div class="buttoncontainer">
+          <a href="https://docs.google.com/document/d/1n1qE2AAGx9OhitxXHVmSMf73FTIYV68bieRx7AufD2c/edit?usp=sharing" target="modframe" class="buttonGrid">
+            <button class="link button">
+              Twig&apos;s Travel Guide To Fendal Harbor
+            </button>
+          </a>
+          <a href="https://docs.google.com/document/d/1J1fHxwKcfNR9b8qB6k0BkNmAQ3mspSbZzGtbhBjN6AE/edit?usp=sharing" target="modframe" class="buttonGrid">
+            <button class="link button">
+              Random stuff because Rick and Bertus wanted it in 1 file
+            </button>
+          </a>
+          <a href="https://homebrewery.naturalcrit.com/share/LZL9PNiI" target="modframe" class="buttonGrid">
+            <button class="link button">
+              New Subclasses
+            </button>
+          </a>
+  
+          <a href="https://homebrewery.naturalcrit.com/share/AdsXdB__R8rl" target="modframe" class="buttonGrid">
+            <button class="link button">
+              Additional Rules Return of the One
+            </button>
+          </a>
+          <a href="https://homebrewery.naturalcrit.com/share/8wHRCMGPc" target="modframe" class="buttonGrid">
+            <button class="link button">
+              Sakon's Elemental Spells
+            </button>
+          </a>
+          <a href="https://homebrewery.naturalcrit.com/share/8wHRCMGPc" target="modframe" class="buttonGrid">
+            <button class="link button">
+              Subclass Fixes
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close">&times;</button>
+
+            <iframe name="modframe" height="600vh" width="96%"></iframe>
+          </div>
+        </div>
+      </div>
+      <script src="modal.js"></script>
+
+      <!-- footer -->
+      <footer class="bottombar">
+        <div class="bottomtext">
+          No Copyright ASTERIA LTD. No Rights Reserved. <br>
+          ASTERIA and the ASTERIA logo aren't trademarks or registered trademarks of ASTERIA Holdings Co., Ltd.
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>
