@@ -29,6 +29,10 @@ html {
   top: 25%;
 }
 
+.vii{
+  height: 30%;
+}
+
 .text {
   color: white;
   font-size: 24px;
@@ -36,6 +40,7 @@ html {
   width: 75%;
   left: 5%;
 }
+
 .footerText{
   color: white;
   font-size: 25px;
