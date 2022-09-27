@@ -1,1 +1,126 @@
-f
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="resources/css/Porto.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/modal.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+  </head>
+
+  <body>
+      <!-- navbar -->
+      <div id="navContainer1">
+        <div class="navBar">
+            <img src="resources/img/Navigatie balk linker gedeelte.png" alt="" height="50px" id="navLeftPart"/>
+            <button class="navButton" onclick="scrollWie()">Wie ben ik?</button>
+            <button class="navButton" onclick="scrollPort()">Portofolio</button>
+            <button class="navButton" onclick="scrollVis()">Visie</button>
+            <button class="navButton" onclick="scrollCont()">Contact</button>
+          </div>
+      </div>
+    <div id="navContainer2">
+        <button id="navToggle" onclick="toggleNav()">open</button>
+        <div class="navBar">
+            <img src="resources/img/Navigatie balk linker gedeelte.png" alt="" height="50px" id="navLeftPart"/>
+            <button id="navToggle" onclick="toggleNav()">X</button>
+            <button class="navButton" onclick="scrollWie()">Wie ben ik?</button>
+            <button class="navButton" onclick="scrollPort()">Portofolio</button>
+            <button class="navButton" onclick="scrollVis()">Visie</button>
+            <button class="navButton" onclick="scrollCont()">Contact</button>
+          </div> 
+    </div>
+    
+    <div class="container">
+      <!-- top part -->
+      <div class="subcontainer">
+        <h1 class="title" id="top">
+          David <br />
+          Dekker
+        </h1>
+        <div class="fotome">
+          <img src="" alt="me" class="fotome" id="fotoVanJezelf" />
+        </div>
+        <div class="preview">
+          <img src="" alt="preview" class="foto" id="Preview"/>
+          </div>
+      </div>
+
+      <!-- wie ben ik -->
+      <div class="subcontainer">
+        <h1 class="title" id="wie">Wie ben ik?</h1>
+        <div>
+          <p class="text">
+            2021-heden: ROC van Flevoland Software Development<br>
+            2020-2021: ROC van Flevoland Mediavormgeving en Adobe<br>
+            HAVO Diploma in 2020 behaald<br><br>
+
+            Toekomst<br>
+            Ik wil graag software developer worden in een bedrijf met een informele werksfeer. 
+            Ik zou graag tijdens stages mij verder willen oriënteren op de toekomst.
+          </p>
+         </div>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="subcontainer"> 
+        <h1 class="title" id="port">Portfolio</h1>
+        <a href="portfolio-content/yahtzee/index.html" target="funnyframe" class="link">
+          <p class="text">Yahtzee in Javascript</p></a>
+        <a href="portfolio-content/phpbrood/index.html" target="funnyframe" class="link">
+          <p class="text">Database-site in PHP</p></a>
+        <a href="portfolio-content/auto/index.html" target="funnyframe" class="link">
+          <p class="text">Database filtering in PHP</p></a>
+        <a href="portfolio-content/tictac/index.html" target="funnyframe" class="link">
+          <p class="text">Boter kaas en eieren in Java (Processing)</p></a>
+      </div>
+
+      <!-- visie -->
+      <div class="subcontainer">
+        <h1 class="title" id="vis">Visie</h1>
+        <div>
+          <p class="text">
+            Ik vind het belangrijk dat ik plezier heb in mijn werk. Programmeertalen zoals Java vind ik erg leuk. 
+            Ook vind ik het leuk om oplossingen te zoeken voor problemen. Ik werk graag aan animaties, interactiviteit 
+            en interessante projecten. Ik houd van vaste planning en structuur in mijn werk. En ik houd van een 
+            duidelijke taakverdeling bij het samenwerken met anderen. In de samenwerking met anderen kan ik
+            originele ideeën hebben.
+          </p>
+        </div>
+      </div>
+
+      <!-- contact en footer -->
+      <div class="subcontainer">
+        <h1 class="title" id="cont">Contact</h1>
+        <footer>
+          <p class="footerText">
+            Tel: 06 16961192<br>
+            Mail: david_dekker@live.nl
+          </p>
+          <a href="https://github.com/3plestar" target="_blank" class="logoLink"> 
+            <img src="resources/img/GitHub Logo.png" alt="" class="logoLogo" />
+          </a>
+
+          <a href="https://twitter.com/tripl3star" target="_blank" class="logoLink">
+            <img src="resources/img/Twitter Logo ww.png" alt="" class="logoLogo"/>
+          </a>
+        </footer>
+      </div>
+
+      <!-- modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialogue">
+          <div class="modal-content">
+            <button class="close">&times;</button>  
+            <iframe name="funnyframe" height="100%" width="96%"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- scripts -->
+      <script src="resources/navigation.js"></script>
+      <script src="resources/modal.js"></script>
+    </div>
+  </body>
+</html>
