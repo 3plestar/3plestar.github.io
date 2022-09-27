@@ -11,7 +11,7 @@ html {
 .container {
   margin-top: 40px;
   display: grid;
-  grid-template-rows: 1000px 1500px 1000px;
+  grid-template-rows: 1000px 1000px 1000px;
 }
 
 /* inhoud */
@@ -23,31 +23,6 @@ html {
   margin: 10px;
 }
 
-.fotome{
-  right: 5%;
-  position: relative;
-  float: right;
-  display: block;
-  top: 10%;
-  
-}
-.fotovoorbeeld1 {
-  position: relative;
-  float: left;
-  top: 30%;
-  left: 5%;
-}
-.fotovoorbeeld2 {
-  position: relative;
-  float: right;
-  top: 6%;
-  right: 5%;
-}
-.fotovoorbeeld3 {
-  position: relative;
-  float: right;
-  top: 55%;
-}
 .preview {
   position: relative;
   text-align: center;
@@ -126,17 +101,17 @@ button {
         display: none;
     }
     .navButton {
-        font-size: 25px;
-        padding: 10px;
-      }
+      font-size: 25px;
+      padding: 10px;
+    }
 
-      /* telefoon inhoud */
-      .background{
-        height: 6985px;
-      }
-      .container {
-        grid-template-rows: 1500px 2000px 1500px;
-      }
+    /* telefoon inhoud */
+    .background{
+      height: 6985px;
+    }
+    .container {
+      grid-template-rows: 1500px 1500px 1500px;
+    }
 }
 
 /* links to social media */
