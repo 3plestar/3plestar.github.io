@@ -1,41 +1,42 @@
 body,
 html {
   margin: 0px;
-  overflow-x: hidden;
-  background-color: rgb(87, 69, 157);
+  background-color: rgb(26, 19, 18);
+  background-image: url("../img/clouds3.png");
+  background-size: 145%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
 }
 * {
-  font-family: Bahnschrift;
+  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
-  margin-top: 40px;
-  display: grid;
-  grid-template-rows: 1000px 1000px 1000px;
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
+  background-color: rgb(193, 92, 158);
 }
 
 /* inhoud */
 .title {
-  font-size: 105px;
+  font-size: 80px;
   color: white;
   padding-left: 2%;
   display: inline-block;
   margin: 10px;
 }
 
-.preview {
-  position: relative;
-  text-align: center;
-  top: 25%;
-}
-
-.vii{
-  height: 30%;
-}
-
 .text {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   width: 75%;
   left: 5%;
@@ -43,7 +44,7 @@ html {
 
 .footerText{
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   left: 5%;
 }
@@ -52,73 +53,62 @@ html {
 /* navigatie */
 button {
   border: none;
-  background-color: rgb(64, 48, 82);
+  
+}
+
+.navBG{
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(171, 76, 138);
+  display: flex;
 }
 
 .navBar {
-  z-index: 2;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: rgb(75, 62, 90);
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .navButton {
   color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 30px;
   font-size: 20px;
 }
 
 .navButton:hover {
-  background-color: rgb(62, 51, 75);
+  background-color: rgba(255, 255, 255, 0.168);
   cursor: pointer;
 }
 
-#navToggle{
-    z-index: 2;
-    position: fixed;
-    display: none;
-}
-#navcontainer2{
-    display: none;
-}
-#navcontainer1{
+#navContainer{
     display: block;
+}
+
+#navToggle{
+  z-index: 2;
+  position: fixed;
+  display: none;
 }
 
  /* navigatie voor telefoon */
 @media only screen and (max-width: 999px) {
-    #navcontainer2{
-        display: block;
-    }
-    #navcontainer1{
-        display: none;
-    }
     #navToggle{
         display: block;
     }
-    .navBar {
-        grid-template-columns: 1fr;
+    .navBG {
         display:none;
-    }
-    #navLeftPart{
-        display: none;
-    }
-    .navButton {
-      font-size: 25px;
-      padding: 10px;
     }
 
     /* telefoon inhoud */
-    .background{
-      height: 6985px;
-    }
     .container {
-      grid-template-rows: 1500px 1500px 1500px;
+      margin: 0px;
     }
 }
-
 /* links to social media */
 .logoLink {
   text-decoration: none;

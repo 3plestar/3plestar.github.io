@@ -10,26 +10,18 @@
   </head>
 
   <body>
-      <!-- navbar -->
-      <div id="navContainer1">
+    <!-- navbar -->
+    <div id="navContainer">
+      <button id="navToggle" onclick="toggleNav()">open</button>
+      <div class="navBG">
         <div class="navBar">
-            <img src="resources/img/Navigatie balk linker gedeelte.png" alt="" height="50px" id="navLeftPart"/>
-            <button class="navButton" onclick="scrollWie()">Wie ben ik?</button>
-            <button class="navButton" onclick="scrollPort()">Portfolio</button>
-            <button class="navButton" onclick="scrollVis()">Visie</button>
-            <button class="navButton" onclick="scrollCont()">Contact</button>
-          </div>
+          <button id="navToggle" onclick="toggleNav()">X</button>
+          <button class="navButton" onclick="scrollWie()">Wie ben ik?</button>
+          <button class="navButton" onclick="scrollPort()">Portfolio</button>
+          <button class="navButton" onclick="scrollVis()">Visie</button>
+          <button class="navButton" onclick="scrollCont()">Contact</button>
+        </div> 
       </div>
-    <div id="navContainer2">
-        <button id="navToggle" onclick="toggleNav()">open</button>
-        <div class="navBar">
-            <img src="resources/img/Navigatie balk linker gedeelte.png" alt="" height="50px" id="navLeftPart"/>
-            <button id="navToggle" onclick="toggleNav()">X</button>
-            <button class="navButton" onclick="scrollWie()">Wie ben ik?</button>
-            <button class="navButton" onclick="scrollPort()">Portfolio</button>
-            <button class="navButton" onclick="scrollVis()">Visie</button>
-            <button class="navButton" onclick="scrollCont()">Contact</button>
-          </div> 
     </div>
     
     <div class="container">
@@ -68,7 +60,9 @@
           <p class="text">Boter kaas en eieren in Java (Processing)</p></a>
         <a href="https://3plestar.github.io/bottle-game/" target="funnyframe" class="link">
           <p class="text">Game gemaakt met Microsoft MakeCode Arcade</p></a>
-<br><br>
+        <a href="https://sterkeparels.nl" target="_blank">
+          <p class="text">Site gemaakt met Wordpress voor een klant</p></a>
+        <br><br>
         <p class="text">Deze site is door mij gemaakt in HTML/CSS/Javascript</p>
       </div>
 
