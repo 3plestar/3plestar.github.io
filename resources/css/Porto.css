@@ -1,8 +1,9 @@
 body,
 html {
   margin: 0px;
-  background-color: rgb(26, 19, 18);
+  
   background-image: url("../img/clouds3.png");
+  background-color: rgb(35, 7, 39);
   background-size: 145%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -49,20 +50,19 @@ html {
   left: 5%;
 }
 
-
-/* navigatie */
 button {
   border: none;
-  
 }
 
+
+/* navigatie */
 .navBG{
   position: fixed;
   z-index: 2;
   top: 0px;
   width: 100%;
   min-height: 100px;
-  background-color: rgb(171, 76, 138);
+  background-color: rgb(173, 59, 141);
   display: flex;
 }
 
